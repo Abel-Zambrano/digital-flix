@@ -10,11 +10,9 @@ function App() {
   const [ movies, setMovies ] = useState([]);
   const [search, setSearch] = useState('');
   
-
-  const access = 'b495b08d'
   // API ========================================================================
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?apikey=${access}&s=shrek`)
+    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=shrek`)
     .then(res => {
       console.log(res);
       

@@ -1,0 +1,32 @@
+html body {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(64, 64, 214);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.movie-card {
+    width: 500px;
+    border: 2px solid yellowgreen;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-about {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.copyright {
+    margin-bottom: 2em;
+    text-align: center;
+    color: gray;
+    opacity: 0.5;
+}

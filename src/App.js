@@ -1,7 +1,8 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
-import './App.css';
 import Movie from './components/Movie';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const [ movies, setMovies ] = useState([]);
@@ -21,12 +22,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Digital Flix</h1>
+      <Header/>
       <Movie 
       title={movies.Title}
       about={movies.Plot}
       image={movies.Poster}
       />
+      <Footer />
     </div>
   );
 }

@@ -1,11 +1,10 @@
 import React from 'react';
 
-const Form = () => {
+const Form = (props) => {
     return (
         <div className="search-form">
             <form action="">
-                <input type="text"/>
-                <button>Search</button>
+                <input onChange={props.changed} type="text" value={props.title}/>
             </form>
         </div>
     );

@@ -33,6 +33,12 @@ body {
     font-weight: 700;
 }
 
+.card-year {
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
 .card-about {
     margin-left: 1rem;
     margin-right: 1rem;

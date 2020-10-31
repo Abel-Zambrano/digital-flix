@@ -3,6 +3,7 @@ import axios from 'axios';
 import Movie from './components/Movie';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Form from './components/Form';
 
 function App() {
   const [ movies, setMovies ] = useState([]);
@@ -14,15 +15,20 @@ function App() {
     axios.get(`http://www.omdbapi.com/?apikey=${access}&t=star+wars`)
     .then(res => {
       setMovies(res.data)
+      setTitle(res.data.Title)
     })
   }, []);
 
   console.log(movies);
   
+  console.log(title);
+  
+  
 
   return (
     <div className="App">
       <Header/>
+      <Form />
       <div className="container">
         <Movie 
         title={movies.Title}

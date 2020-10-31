@@ -23,11 +23,13 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Movie 
-      title={movies.Title}
-      about={movies.Plot}
-      image={movies.Poster}
-      />
+      <div className="container">
+        <Movie 
+        title={movies.Title}
+        about={movies.Plot}
+        image={movies.Poster}
+        />
+      </div>
       <Footer />
     </div>
   );

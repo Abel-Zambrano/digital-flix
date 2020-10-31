@@ -8,20 +8,39 @@ html body {
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .movie-card {
     width: 500px;
-    border: 2px solid yellowgreen;
+    border-radius: 16px;
+    box-shadow: 4px 4px 6px 6px lightgray;
+
 }
 
 .card-title {
     text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
 }
 
 .card-about {
     margin-left: 1rem;
     margin-right: 1rem;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+.card-image {
+    margin-left: 6rem;
+    margin-bottom: 1rem;
 }
 
 .copyright {

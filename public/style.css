@@ -13,9 +13,14 @@ body {
     font-family: 'Permanent Marker', cursive;
 }
 
-.search-form {
-    margin-left: 24rem;
+.form-div {
+    text-align: center;
     margin-top: 2rem;
+}
+
+input {
+    width: 20rem;
+    height: 26px;
 }
 
 .container {

@@ -12,7 +12,7 @@ function App() {
 
   // API ========================================================================
   useEffect(() => {
-    axios.get(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=${search}`)
+    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=${search}`)
     .then(res => {
       setMovies(res.data.Search)
 

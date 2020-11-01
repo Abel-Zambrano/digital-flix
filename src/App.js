@@ -12,7 +12,7 @@ function App() {
   
   // API ========================================================================
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=shrek`)
+    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=trek`)
     .then(res => {
       console.log(res);
       

@@ -13,6 +13,11 @@ body {
     font-family: 'Permanent Marker', cursive;
 }
 
+.search-form {
+    margin-left: 24rem;
+    margin-top: 2rem;
+}
+
 .container {
     display: flex;
     justify-content: center;

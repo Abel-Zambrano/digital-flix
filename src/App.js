@@ -9,14 +9,12 @@ function App() {
   // State ======================================================================
   const [ movies, setMovies ] = useState([]);
   const [search, setSearch] = useState('');
-  const [loading, setLoading] = useState(true);
 
   // API ========================================================================
   useEffect(() => {
     axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=${search}`)
     .then(res => {
       setMovies(res.data.Search)
-      setLoading(false);
 
     })
   }, [search]);
@@ -32,9 +30,7 @@ function App() {
   
 
   // Render =======================================================================
-  return (
-   (loading ? <div><h5>Loading...</h5></div>:    
-
+  return (  
     <div className="App">
       <Header/>
       <Form 
@@ -51,18 +47,9 @@ function App() {
           />
         })}
     </div>
-
-      {/* <div className="container">
-        <Movie 
-        title={movies?.[0]?.Title}
-        image={movies?.[0]?.Poster}
-        year={movies?.[0]?.Year}
-        />
-      </div> */}
-
       <Footer />
     </div>
-  ));
+  );
 }
 
 export default App;

@@ -4,7 +4,7 @@ const Form = (props) => {
     return (
         <div className="search-form">
             <form action="">
-                <input onChange={props.changed} type="text" placeholder="Search"/>
+                <input onChange={props.search} type="text" placeholder="Search" />
             </form>
         </div>
     );

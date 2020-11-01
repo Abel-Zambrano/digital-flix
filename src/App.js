@@ -41,13 +41,25 @@ function App() {
       title={movies?.[0]?.Title}
       search={searchInputHandler}
       />
-      <div className="container">
+    <div className="container">
+      {movies?.map((movie, index) => {
+          return <Movie
+          id={movie.index} 
+          title={movie?.Title}
+          image={movie?.Poster}
+          year={movie?.Year}
+          />
+        })}
+    </div>
+
+      {/* <div className="container">
         <Movie 
         title={movies?.[0]?.Title}
         image={movies?.[0]?.Poster}
         year={movies?.[0]?.Year}
         />
-      </div>
+      </div> */}
+
       <Footer />
     </div>
   ));

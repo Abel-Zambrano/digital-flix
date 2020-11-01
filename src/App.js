@@ -38,9 +38,10 @@ function App() {
       search={searchInputHandler}
       />
     <div className="container">
-      {movies?.map((movie, index) => {
+      {movies?.map((movie) => {
           return <Movie
-          id={movie.index} 
+          key={movie?.imdbID}
+          id={movie?.imdbID} 
           title={movie?.Title}
           image={movie?.Poster}
           year={movie?.Year}

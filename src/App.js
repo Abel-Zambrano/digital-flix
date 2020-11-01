@@ -12,7 +12,7 @@ function App() {
   
   // API ========================================================================
   useEffect(() => {
-    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=${yourSearch}`)
+    axios.get(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_SECRET_KEY}&s=${search}`)
     .then(res => {
       console.log(res);
       
@@ -23,10 +23,6 @@ function App() {
 
   console.log(movies);
 
-  const yourSearch = search;
-  console.log(`Your search: ${yourSearch}`);
-  
-  
   // Event Handler ================================================================
   const searchInputHandler = ((event) => {
     setSearch(event.target.value);
@@ -35,6 +31,7 @@ function App() {
   console.log(search);
   
 
+  // Render =======================================================================
   return (
     <div className="App">
       <Header/>

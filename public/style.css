@@ -69,3 +69,16 @@ input {
     color: gray;
     opacity: 0.5;
 }
+
+@media (max-width: 500px) {
+    .movie-card {
+        margin: auto;
+        width: 300px;
+    }
+
+    .card-image {
+        width: 250px;
+        margin-left: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
